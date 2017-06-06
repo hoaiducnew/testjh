@@ -1,0 +1,9 @@
+entity FanClub {
+	id Long,
+	name String,
+    description String,
+    leader String,
+    address String,
+    email String,
+    phone String   
+}

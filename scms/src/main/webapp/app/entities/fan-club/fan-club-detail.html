@@ -1,0 +1,43 @@
+
+<div>
+    <h2><span>Fan Club</span> {{vm.fanClub.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Name</span></dt>
+        <dd>
+            <span>{{vm.fanClub.name}}</span>
+        </dd>
+        <dt><span>Description</span></dt>
+        <dd>
+            <span>{{vm.fanClub.description}}</span>
+        </dd>
+        <dt><span>Leader</span></dt>
+        <dd>
+            <span>{{vm.fanClub.leader}}</span>
+        </dd>
+        <dt><span>Address</span></dt>
+        <dd>
+            <span>{{vm.fanClub.address}}</span>
+        </dd>
+        <dt><span>Email</span></dt>
+        <dd>
+            <span>{{vm.fanClub.email}}</span>
+        </dd>
+        <dt><span>Phone</span></dt>
+        <dd>
+            <span>{{vm.fanClub.phone}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="fan-club-detail.edit({id:vm.fanClub.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down"> Edit</span>
+    </button>
+</div>

@@ -40,6 +40,7 @@ public class CacheConfiguration {
             cm.createCache(edu.mum.scms.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(edu.mum.scms.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(edu.mum.scms.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(edu.mum.scms.domain.FanClub.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
